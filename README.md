@@ -5,14 +5,29 @@
 [![GoDoc](https://godoc.org/github.com/romnnn/mongotypes?status.svg)](https://godoc.org/github.com/romnnn/mongotypes)  [![Test Coverage](https://codecov.io/gh/romnnn/mongotypes/branch/master/graph/badge.svg)](https://codecov.io/gh/romnnn/mongotypes)
 [![Release](https://img.shields.io/github/release/romnnn/mongotypes)](https://github.com/romnnn/mongotypes/releases/latest)
 
-Your description goes here...
+Provides types for [go.mongodb.org/mongo-driver](https://github.com/mongodb/mongo-go-driver) that can be used to construct and decode mongodb responses.
 
+**Note**: Currently, only types needed for configuration of mongodb replicasets are provided.
 
+**Note**: If you are looking for types for [gopkg.in/mgo.v2](https://github.com/go-mgo/mgo), have a look at [juju/replicaset](https://github.com/juju/replicaset).
 
-#### Usage as a library
+#### Example
+
+Lets say you want to run the `replSetGetStatus` command to check the primary of your replicaset. You can use `replicaset.Status` with `Decode` to parse the raw bson result.
 
 ```golang
-import "github.com/romnnn/mongotypes"
+import "github.com/romnnn/mongotypes/replicaset"
+
+var statusResult replicaset.Status
+
+// adminDatabase is a connected mongo db admin database
+if err := adminDatabase.RunCommand(context.TODO(), bson.D{{"replSetGetStatus", nil}}).Decode(&statusResult); err != nil {
+    log.Fatal(err)
+}
+primary := statusResult.Primary()
+if primary == nil {
+    log.Fatal("The replicaset has no primary")
+}
 ```
 
 For more examples, see `examples/`.
