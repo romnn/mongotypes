@@ -7,7 +7,7 @@ go:
 os:
   - linux
   - osx
-env: MOD=github.com/romnnn/mongotypes BINARY=mongotypes
+env: MOD=github.com/romnn/mongotypes BINARY=mongotypes
 
 jobs:
   allow_failures:

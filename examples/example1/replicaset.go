@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/romnnn/mongotypes/replicaset"
+	"github.com/romnn/mongotypes/replicaset"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"

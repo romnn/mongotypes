@@ -1,4 +1,4 @@
-module github.com/romnnn/mongotypes
+module github.com/romnn/mongotypes
 
 go 1.14
 

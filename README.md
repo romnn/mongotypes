@@ -1,9 +1,9 @@
 ## mongotypes
 
-[![Build Status](https://travis-ci.com/romnnn/mongotypes.svg?branch=master)](https://travis-ci.com/romnnn/mongotypes)
-[![GitHub](https://img.shields.io/github/license/romnnn/mongotypes)](https://github.com/romnnn/mongotypes)
-[![GoDoc](https://godoc.org/github.com/romnnn/mongotypes?status.svg)](https://godoc.org/github.com/romnnn/mongotypes)  [![Test Coverage](https://codecov.io/gh/romnnn/mongotypes/branch/master/graph/badge.svg)](https://codecov.io/gh/romnnn/mongotypes)
-[![Release](https://img.shields.io/github/release/romnnn/mongotypes)](https://github.com/romnnn/mongotypes/releases/latest)
+[![Build Status](https://travis-ci.com/romnn/mongotypes.svg?branch=master)](https://travis-ci.com/romnn/mongotypes)
+[![GitHub](https://img.shields.io/github/license/romnn/mongotypes)](https://github.com/romnn/mongotypes)
+[![GoDoc](https://godoc.org/github.com/romnn/mongotypes?status.svg)](https://godoc.org/github.com/romnn/mongotypes)  [![Test Coverage](https://codecov.io/gh/romnn/mongotypes/branch/master/graph/badge.svg)](https://codecov.io/gh/romnn/mongotypes)
+[![Release](https://img.shields.io/github/release/romnn/mongotypes)](https://github.com/romnn/mongotypes/releases/latest)
 
 Provides types for [go.mongodb.org/mongo-driver](https://github.com/mongodb/mongo-go-driver) that can be used to construct and decode mongodb responses.
 
@@ -16,7 +16,7 @@ Provides types for [go.mongodb.org/mongo-driver](https://github.com/mongodb/mong
 Lets say you want to run the `replSetGetStatus` command to check the primary of your replicaset. You can use `replicaset.Status` with `Decode` to parse the raw bson result.
 
 ```golang
-import "github.com/romnnn/mongotypes/replicaset"
+import "github.com/romnn/mongotypes/replicaset"
 
 var statusResult replicaset.Status
 

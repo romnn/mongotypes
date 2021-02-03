@@ -10,7 +10,7 @@ import os
 from invoke import task
 import webbrowser
 
-PKG = "github.com/romnnn/mongotypes"
+PKG = "github.com/romnn/mongotypes"
 CMD_PKG = PKG
 
 
