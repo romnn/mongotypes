@@ -1,6 +1,6 @@
 ## mongotypes
 
-[![Build Status](https://travis-ci.com/romnn/mongotypes.svg?branch=master)](https://travis-ci.com/romnn/mongotypes)
+[![Build Status](https://github.com/romnn/mongotypes/workflows/test/badge.svg)](https://github.com/romnn/mongotypes/actions)
 [![GitHub](https://img.shields.io/github/license/romnn/mongotypes)](https://github.com/romnn/mongotypes)
 [![GoDoc](https://godoc.org/github.com/romnn/mongotypes?status.svg)](https://godoc.org/github.com/romnn/mongotypes)  [![Test Coverage](https://codecov.io/gh/romnn/mongotypes/branch/master/graph/badge.svg)](https://codecov.io/gh/romnn/mongotypes)
 [![Release](https://img.shields.io/github/release/romnn/mongotypes)](https://github.com/romnn/mongotypes/releases/latest)
